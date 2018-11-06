@@ -1,12 +1,58 @@
+<?php 
+
+switch($page)
+    {
+        case 'Pg-jogo':
+            $script = "pg-jogo";
+            break;
+        case 'Cadastrar':
+            $script = "cadastrar";
+            break;
+        case 'Ranking':
+            $script = "ranking";
+            break;
+        case 'Descricao':
+            $script = "descricao";
+            break;
+        case 'Perfil':
+            $script = "perfil";
+            break;
+        case 'Jogadores':
+            $script = "jogadores";
+            break;
+        case 'Logs':
+            $script = "logs";
+            break;
+        case 'Regras':
+            $script = "regras";
+            break;
+        case 'CadastrarAdmin':
+            $script = "cadastrarAdmin";
+            break;    
+        case 'Esqueci':
+            $script = "esqueci";
+            break;
+        case 'Login':
+        default:
+            $script = "login";
+            break;  
+    }
+?>
+
+
+
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sistema Biblioteca</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    
-</body>
+	<head>
+		<?php include 'includes/header.php' ?>
+		<title>Sistema biblioteca</title>
+	</head>
+	<body>
+        <?php 
+            include 'Includes/verificaLogin.php';
+            include 'Includes/navbar.php';
+            include 'views/'.$script.'.php';
+        ?>
+       
+	</body>
 </html>
