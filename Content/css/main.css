@@ -1,4 +1,42 @@
+/*CSS PADRAO*/
+
+/* FONTE BASE DO SITE */
+*{
+	font-family: 'PT Serif', serif;
+}
+
+/* CONTAINER DO SITE */
+
+.container{
+	width: 1230px;
+	display: flex;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.container.row{
+	flex-direction: row;
+}
+
+.container.col{
+	flex-direction: column;
+}
+
 /*MAIN CSS*/
+.body-login {
+	background-image: url('../../img/img_wallpaper.jpg');
+	background-repeat: no-repeat;
+}
+
+.txt-login {
+	color: white;
+
+}
+
+.login-principal {
+	margin-left: 40%;
+	margin-top: 9.5%;
+}
 
 .login-form {
     text-align: center;

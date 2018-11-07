@@ -2,7 +2,7 @@
 
 switch($page)
     {
-        case 'Login':
+        
         default:
             $script = "login";
             break;  
