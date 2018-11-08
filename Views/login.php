@@ -13,7 +13,7 @@
                     </div>
                     <div class="row row-form">
                         <div style="margin-bottom: 10px" class="txt-login col-sm-12 col-md-12">
-                            <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email / Usuário" required autofocus>
+                            <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required autofocus>
                         </div>
                     </div>
                     <div style="margin-bottom: 10px" class="row row-form senha-login">
