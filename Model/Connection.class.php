@@ -3,7 +3,7 @@
     {
         public function getConn()
         {
-            $conn = new mysqli("localhost", "root", "", "sistema_bibliblioteca");
+            $conn = new mysqli("localhost", "root", "", "sistema_biblioteca");
             if ($conn->connect_error) {
                 $erros['conexao'] = "Erro de conexão: " . $conn->connect_error;
             }

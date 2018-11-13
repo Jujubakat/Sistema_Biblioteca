@@ -7,7 +7,7 @@
 		<div class="container-fluid">
 		<h1>Livros</h1>
 		<?php
-		require_once("model/Connection.class.php");
+		require_once("Model/Connection.class.php");
 
 				$connection = new Connection();
         		$conn = $connection->getConn();
@@ -16,7 +16,7 @@
 				    die("Erro de conexão: " . $conn->connect_error);
 				} 
 
-				$sql = "CALL new_ranking()";
+				$sql = "CALL new_status()";
 				$result = $conn->query($sql);
 
 				if ($result->num_rows > 0) {
