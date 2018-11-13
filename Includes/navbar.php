@@ -13,6 +13,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?page=Cadastrar">Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=Lista">Lista de livros</a>
                     </li>	
                     <li class="nav-item">
                         <a class="nav-link" href="views/sair.php">Sair</a>

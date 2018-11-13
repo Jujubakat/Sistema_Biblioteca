@@ -4,7 +4,7 @@
 	$nomeA = "";
 	$categoria = "";
 
-	include 'connection.php';
+	include '../Includes/Connection.php';
 	
 
 	$conn = new mysqli($servername, $username, $password, $dbname);
