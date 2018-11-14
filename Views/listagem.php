@@ -16,19 +16,24 @@
 				    die("Erro de conexão: " . $conn->connect_error);
 				} 
 
-				$sql = "CALL new_status()";
+				$sql = "SELECT * FROM livro 
+						WHERE status_livro = "D" OR status_livro = "I"";
 				$result = $conn->query($sql);
 
 				if ($result->num_rows > 0) {
-				    echo "<table class='table'>
-				    		<th>Apelido</th>
-				    		<th>Pontuação</th>			    		
+				    echo "<table id='t01'>
+				    		<th>Livro</th>
+				    		<th>Autor</th>
+				    		<th>Categoria</th>
+				    		<th>Status</th>			    		
 				    		</tr>";
 				    // output data of each row
 				    while($row = $result->fetch_assoc()) {
 				        echo "<tr>
-				        		<td>".$row["apelido"]."</td>
-				        		<td>".$row["score"]."</td>				        	
+				        		<td>".$row["nome_livro"]."</td>
+				        		<td>".$row["nome_autor"]."</td>
+				        		<td>".$row["categoria_livro"]."</td>
+				        		<td>".$row["status_livro"]."</td>				        	
 				        	  </tr>";
 				    }
 				    echo "</table>";
