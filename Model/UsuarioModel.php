@@ -9,9 +9,9 @@
         {
             $conn = new mysqli($servername, $username, $password, $dbname);
             
-            //$stmt = $conn->prepare("Call new_jogador('$user->Nome', '$user->Email', '$user->Senha', '$user->Apelido', '$user->dataNasc', '$user->Tipo')");            
+            //$stmt = $conn->prepare("INSERT INTO usuario('$user->Nome', '$user->Email', '$user->Senha', '$user->Apelido', '$user->dataNasc', '$user->Tipo')");            
 
-            $sqlC = "CALL new_jogador('$usuario->Email', '$usuario->Senha', '$usuario->Nome', '$usuario->Apelido', '$usuario->dataNasc')";
+            $sqlC = "INSERT INTO usuario('$usuario->Email', '$usuario->Senha', '$usuario->Nome', '$usuario->Cpf', '$usuario->dataCadas')";
 
 
             //i   corresponding variable has type integer
@@ -44,7 +44,7 @@
             $connection = new Connection();
             $conn = $connection->getConn();
 
-            $sql = "SELECT email, senha, tipo, apelido, nome, dt_cadastro, dt_nascimento FROM usuario where email = ? and senha = ?";
+            $sql = "SELECT nome_usuario, senha_usuario, email_usuario, cpf_usuario, tipo_usuario, data_cadastro FROM usuario where email_usuario = ? and senha_usuario = ?";
             $stmt = $conn->prepare($sql);
             $stmt->bind_param('ss', $email, $senha); // 's' especifica o tipo => 'string'
 
@@ -62,23 +62,18 @@
                         session_start([
                             'cookie_lifetime' => 86400,
                         ]);
-                        $_SESSION['email'] = $row["email"];
-                        $_SESSION['nome'] = $row["nome"];
-                        $_SESSION['tipo'] = $row["tipo"];
-                        $_SESSION['apelido'] = $row["apelido"];
-                        $_SESSION['dataNasc'] = $row["dt_nascimento"];
-                        $_SESSION['dataCadas'] = $row["dt_cadastro"];
-                     
-                        $dataSQL = $row["dt_nascimento"];
+                        $_SESSION['email'] = $row["email_usuario"];
+                        $_SESSION['nome'] = $row["nome_usuario"];
+                        $_SESSION['tipo'] = $row["tipo_usuario"];
+                        $_SESSION['cpf'] = $row["cpf_usuario"];                        
+                        $_SESSION['dataCadas'] = $row["data_cadastro"];                     
+                        $dataSQL = $row["data_cadastro"];
                         $dataDDMMAAAA = date("d/m/Y", strtotime($dataSQL));
                         $_SESSION['data'] = $dataDDMMAAAA;
 
                         $form_data['success'] = true;
 
                         $desc = "Login feito por ".$_SESSION['nome'];
-                        $sqlLoginLog = "call inserir_log('".$desc."', 'L')";
-                        $stmt2 = $conn->prepare($sqlLoginLog);
-                        $stmt2->execute();
 
                         $form_data['posted'] = 'Login feito com sucesso';
 

@@ -1,7 +1,7 @@
 <?php
 
-	include_once '../aplicacao/UsuarioAplicacao.php';
-    include_once '../dominio/Usuario.class.php';
+	include_once '../model/Connection.php';
+    include_once '../model/UsuarioModel.php';
 
     $erros = array(); //Para armazenar os erros
     $form_data = array(); //Para enviar os dados de volta à página
@@ -52,9 +52,9 @@
                 $user->Nome = $_POST['inputNome'];
                 $user->Email = $_POST['inputEmail'];
                 $user->Senha = $_POST['inputSenha'];
-                $user->Apelido = $_POST['inputApelido'];                
-                $user->dataNasc = $_POST['inputDataNasc'];
-                $user->Tipo = 'J';
+                $user->Cpf = $_POST['inputCpf'];                
+                $user->dataCadas = $_POST['inputDataCadas'];
+                $user->Tipo = 'C';
                 
                 $form_data = $aplicacao->AdicionarUsuario($user);
                 

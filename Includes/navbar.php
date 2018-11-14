@@ -12,11 +12,17 @@
                         <a class="nav-link" href="index.php?page=Login">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?page=Cadastrar">Cadastrar</a>
+                        <a class="nav-link" href="index.php?page=CadastrarLivro">Cadastrar Livro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?page=Lista">Lista de livros</a>
+                        <a class="nav-link" href="index.php?page=Lista">Livros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=Emprestimos">Empréstimos</a>
                     </li>	
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=CadastrarUsuario">Cadastrar</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="views/sair.php">Sair</a>
                     </li>

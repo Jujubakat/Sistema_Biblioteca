@@ -6,11 +6,17 @@ switch($page)
         default:
             $script = "login";
             break;  
-        case 'Cadastrar':
+        case 'CadastrarLivro':
             $script = "cadastrarLivro";    
             break;
         case 'Lista':
             $script = "listagem";
+            break;
+        case 'Emprestimos':
+            $script = "emprestimos";
+            break;
+        case 'CadastrarUsuario':
+            $script = "cadastrarUsuario";
             break;
     }
 ?>
