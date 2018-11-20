@@ -7,7 +7,7 @@
 		<div class="container-fluid">
 		<h1>Livros</h1>
 		<?php
-		require_once("Model/Connection.php");
+		require_once("model/Connection.php");
 
 				$connection = new Connection();
         		$conn = $connection->getConn();
@@ -17,7 +17,7 @@
 				} 
 
 				$sql = "SELECT * FROM livro 
-						WHERE status_livro = "D" OR status_livro = "I"";
+						WHERE status_livro = 'D' OR status_livro = 'I'";
 				$result = $conn->query($sql);
 
 				if ($result->num_rows > 0) {

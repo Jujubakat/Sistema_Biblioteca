@@ -7,7 +7,7 @@
 		<div class="container-fluid">
 		<h1>Empréstimos</h1>
 		<?php
-		require_once("Model/Connection.php");
+		require_once("model/Connection.php");
 
 				$connection = new Connection();
         		$conn = $connection->getConn();

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 		<div class="container-fluid">
-			<h1>Cadastro de jogador</h1>
+			<h1>Cadastro de Livro</h1>
 			<div id="divMensagem"></div>
 			<form id="formCadastroLivro">
 			  <div class="row">
