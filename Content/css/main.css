@@ -56,3 +56,19 @@ th, td {
     padding: 5px;
     text-align: left;
 }
+
+.main-cadastrar-livro {
+	background-color: cadetblue;
+}
+
+.btn-cadastrar-livro {
+	cursor: pointer;
+	background-color: blue;
+	color: white;
+	margin-top: 10px;
+}
+
+.form-cadastrar-livro {
+	font-size: 18px;
+	color: white;
+}

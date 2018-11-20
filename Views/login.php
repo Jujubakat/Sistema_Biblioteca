@@ -24,7 +24,7 @@
                     </div>
                     <div class="row row-form">
                         <div class="txt-login col-sm-12 col-md-12">
-                            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit"><i class="fas fa-sign-in-alt"></i>  Entrar</button>
                         </div>
                     </div> 
                 </form>
