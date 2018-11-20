@@ -2,7 +2,8 @@
 
 /* FONTE BASE DO SITE */
 *{
-	font-family: 'PT Serif', serif;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
 }
 
 /* CONTAINER DO SITE */
@@ -63,12 +64,16 @@ th, td {
 
 .btn-cadastrar-livro {
 	cursor: pointer;
-	background-color: blue;
+	background-color: black;
 	color: white;
 	margin-top: 10px;
+	width: 250px;
+	border: 0;
 }
 
 .form-cadastrar-livro {
+	margin-top: 5%;
 	font-size: 18px;
 	color: white;
+	width: 100%;
 }

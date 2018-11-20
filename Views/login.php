@@ -7,7 +7,7 @@
                 
                     <div class="row row-form titulo-login">
                         <div class="txt-login col-sm-12 col-md-12">
-                            <h1>Login</h1>
+                            <h1><i class="fas fa-sign-in-alt"></i>  Login</h1>
                             <h1 class="h3 mb-3 font-weight-normal">Faça o login para acessar</h1>
                         </div>
                     </div>

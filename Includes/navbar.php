@@ -9,22 +9,22 @@
 			    <ul class="navbar-nav mr-auto">			    
 	
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?page=Login">Login</a>
+                        <a class="nav-link" href="index.php?page=Login"><i class="fas fa-sign-in-alt"></i>  Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?page=CadastrarLivro">Cadastrar Livro</a>
+                        <a class="nav-link" href="index.php?page=CadastrarLivro"><i class="fas fa-atlas"></i>  Cadastrar Livro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?page=Lista">Livros</a>
+                        <a class="nav-link" href="index.php?page=Lista"><i class="fas fa-list-alt"></i>  Livros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?page=Emprestimos">Empréstimos</a>
+                        <a class="nav-link" href="index.php?page=Emprestimos"><i class="far fa-list-alt"></i>  Empréstimos</a>
                     </li>	
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?page=CadastrarUsuario">Cadastrar</a>
+                        <a class="nav-link" href="index.php?page=CadastrarUsuario"><i class="fas fa-users"></i>  Cadastrar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="views/sair.php">Sair</a>
+                        <a class="nav-link" href="views/sair.php"><i class="far fa-arrow-alt-circle-right"></i>  Sair</a>
                     </li>
 
 			    </ul>
