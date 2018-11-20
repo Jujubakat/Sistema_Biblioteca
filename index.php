@@ -1,6 +1,10 @@
 <?php 
-
-switch($page)
+    if(!isset($_GET['page'])){
+    $page = "Jogo";
+    } else {
+    $page = $_GET['page'];
+    }
+    switch($page)
     {
         
         default:
