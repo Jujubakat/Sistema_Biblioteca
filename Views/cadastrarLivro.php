@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-	<body class="main-cadastrar-livro">
-		<div style="color: white; margin-top: 10px;" class="container-fluid">
+	<body class="main-cadastrar">
+		<div style="margin-top: 10px;" class="container-fluid">
 
 			<h1><i class="fas fa-atlas"></i>  Cadastro de livro</h1>
 			<div id="divMensagem"></div>
 
 			<div class="container">
-				<form id="formCadastroLivro" class="form-cadastrar-livro">
+				<form id="formCadastroLivro" class="form-cadastrar">
 
 					<div class="row">
 						<div class="form-group col-xs-6 col-lg-6">
