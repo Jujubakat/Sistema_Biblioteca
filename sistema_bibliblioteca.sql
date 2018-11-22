@@ -59,6 +59,7 @@ CREATE TABLE `usuario` (
 --
 
 CREATE TABLE `usuario_livro` (
+   `id_aluguel` int(11) NOT NULL,
   `id_livro` int(11) NOT NULL,
   `id_usuario` int(11) NOT NULL,
   `data_retirada` datetime NOT NULL,
