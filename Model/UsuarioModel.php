@@ -7,20 +7,14 @@
 
         public function AdicionarUsuario($usuario)
         {
-            $conn = new mysqli($servername, $username, $password, $dbname);
+            $conn = new Connection();
             
             //$stmt = $conn->prepare("INSERT INTO usuario('$user->Nome', '$user->Email', '$user->Senha', '$user->Apelido', '$user->dataNasc', '$user->Tipo')");            
 
             $sqlC = "INSERT INTO usuario('$usuario->Email', '$usuario->Senha', '$usuario->Nome', '$usuario->Cpf', '$usuario->dataCadas')";
 
 
-            //i   corresponding variable has type integer
-            //d   corresponding variable has type double
-            //s   corresponding variable has type string
-            //b   corresponding variable is a blob and will be sent in packets
-            //$stmt->bind_param('sssss', $user->email, $user->senha, $user->nome, $user->apelido, $user->dataNasc);
             $stmt = $conn->prepare($sqlC);
-            // 's' especifica o tipo => 'string'
             $stmt->execute();
 
             if ($stmt->error) {
@@ -44,7 +38,7 @@
             $connection = new Connection();
             $conn = $connection->getConn();
 
-            $sql = "SELECT nome_usuario, senha_usuario, email_usuario, cpf_usuario, tipo_usuario, data_cadastro FROM usuario where email_usuario = ? and senha_usuario = ?";
+            $sql = "SELECT nome_usuario, senha_usuario, email_usuario, tipo_usuario FROM usuario where email_usuario = ? and senha_usuario = ?";
             $stmt = $conn->prepare($sql);
             $stmt->bind_param('ss', $email, $senha); // 's' especifica o tipo => 'string'
 

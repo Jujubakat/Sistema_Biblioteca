@@ -1,7 +1,7 @@
 <?php
 
-	include_once '../model/Connection.php';
-    include_once '../model/UsuarioModel.php';
+	include_once '../Model/Connection.php';
+    include_once '../Model/UsuarioModel.php';
 
     $erros = array(); //Para armazenar os erros
     $form_data = array(); //Para enviar os dados de volta à página

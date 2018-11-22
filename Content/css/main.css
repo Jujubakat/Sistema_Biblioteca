@@ -5,6 +5,10 @@
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 }
+body {
+	background-color: cadetblue;
+	color: white;
+}
 
 /* CONTAINER DO SITE */
 
@@ -24,10 +28,7 @@
 }
 
 /*MAIN CSS*/
-.body-login {
-	background-image: url('../../img/img_wallpaper.jpg');
-	background-repeat: no-repeat;
-}
+
 
 .txt-login {
 	color: white;
@@ -58,11 +59,6 @@ th, td {
     text-align: left;
 }
 
-.main-cadastrar {
-	background-color: cadetblue;
-	color: white;
-}
-
 .btn-cadastrar-livro {
 	cursor: pointer;
 	background-color: black;
@@ -74,7 +70,8 @@ th, td {
 
 .btn-principal {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
+	width: 100%;
 }
 
 .form-cadastrar {
