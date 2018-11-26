@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 06-Nov-2018 às 23:22
+-- Generation Time: 26-Nov-2018 às 23:46
 -- Versão do servidor: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sistema_bibliblioteca`
+-- Database: `sistema_biblioteca`
 --
 
 -- --------------------------------------------------------
@@ -59,7 +59,7 @@ CREATE TABLE `usuario` (
 --
 
 CREATE TABLE `usuario_livro` (
-   `id_aluguel` int(11) NOT NULL,
+  `id_aluguel` int(11) NOT NULL,
   `id_livro` int(11) NOT NULL,
   `id_usuario` int(11) NOT NULL,
   `data_retirada` datetime NOT NULL,
@@ -81,6 +81,24 @@ ALTER TABLE `livro`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id_usuario`);
+
+--
+-- Indexes for table `usuario_livro`
+--
+ALTER TABLE `usuario_livro`
+  ADD KEY `id_livro` (`id_livro`),
+  ADD KEY `id_usuario` (`id_usuario`);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Limitadores para a tabela `usuario_livro`
+--
+ALTER TABLE `usuario_livro`
+  ADD CONSTRAINT `usuario_livro_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id_livro`),
+  ADD CONSTRAINT `usuario_livro_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
