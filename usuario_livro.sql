@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 26-Nov-2018 às 23:46
+-- Generation Time: 27-Nov-2018 às 00:33
 -- Versão do servidor: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -25,36 +25,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `livro`
---
-
-CREATE TABLE `livro` (
-  `id_livro` int(11) NOT NULL,
-  `nome_livro` varchar(256) NOT NULL,
-  `nome_autor` varchar(128) NOT NULL,
-  `categoria_livro` varchar(128) NOT NULL,
-  `status_livro` char(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `usuario`
---
-
-CREATE TABLE `usuario` (
-  `id_usuario` int(11) NOT NULL,
-  `nome_usuario` varchar(80) NOT NULL,
-  `senha_usuario` varchar(32) NOT NULL,
-  `email_usuario` varchar(256) NOT NULL,
-  `cpf_usuario` varchar(11) NOT NULL,
-  `tipo_usuario` char(1) NOT NULL,
-  `data_cadastro` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `usuario_livro`
 --
 
@@ -71,23 +41,22 @@ CREATE TABLE `usuario_livro` (
 --
 
 --
--- Indexes for table `livro`
---
-ALTER TABLE `livro`
-  ADD PRIMARY KEY (`id_livro`);
-
---
--- Indexes for table `usuario`
---
-ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`id_usuario`);
-
---
 -- Indexes for table `usuario_livro`
 --
 ALTER TABLE `usuario_livro`
+  ADD PRIMARY KEY (`id_aluguel`),
   ADD KEY `id_livro` (`id_livro`),
   ADD KEY `id_usuario` (`id_usuario`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `usuario_livro`
+--
+ALTER TABLE `usuario_livro`
+  MODIFY `id_aluguel` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
