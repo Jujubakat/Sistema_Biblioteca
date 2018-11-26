@@ -5,7 +5,7 @@
 	$categoria = "";
 
 	include '../Model/Connection.php';
-	
+	include '../Model/LivroModel.php';
 
 	$conn = new mysqli($servername, $username, $password, $dbname);
 

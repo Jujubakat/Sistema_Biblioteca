@@ -54,7 +54,7 @@
                 $user->Senha = $_POST['inputSenha'];
                 $user->Cpf = $_POST['inputCpf'];                
                 $user->dataCadas = $_POST['inputDataCadas'];
-                $user->Tipo = 'C';
+                $user->Tipo = '';
                 
                 $form_data = $aplicacao->AdicionarUsuario($user);
                 
