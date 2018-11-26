@@ -24,6 +24,9 @@
                         <a class="nav-link" href="index.php?page=CadastrarUsuario"><i class="fas fa-users"></i>  Cadastrar</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=Alugar"><i class="fab fa-algolia"></i>  Alugar</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="views/sair.php"><i class="far fa-arrow-alt-circle-right"></i>  Sair</a>
                     </li>
 

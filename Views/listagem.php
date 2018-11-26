@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-		<title>Lista de Livros</title>
-</head>
+
 <body>
-		<div class="container-fluid">
-		<h1>Livros</h1>
+		<h1><i class="fas fa-list-alt"></i> Livros</h1>
+		<div style="margin-top: 10px;" class="container-fluid">
+		
 		<?php
 		require_once("model/Connection.php");
 

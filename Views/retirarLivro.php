@@ -4,7 +4,7 @@
 
 		<div style="margin-top: 10px;" class="container-fluid">
 
-			<h1><i class="fas fa-users"></i>  Cadastro de Usuario</h1>
+			<h1><i class="fab fa-algolia"></i> Alugar</h1>
 			<div id="divMensagem"></div>
 			<div class="container">
 				<form id="formCadastroUsuario" class="form-cadastrar">
