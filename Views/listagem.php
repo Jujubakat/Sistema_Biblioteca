@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-		<title>Lista de Livros</title>
-</head>
+
 <body>
+<<<<<<< HEAD
+		<h1><i class="fas fa-list-alt"></i> Livros</h1>
+		<div style="margin-top: 10px;" class="container-fluid">
+		
+		<?php
+		require_once("model/Connection.php");
+=======
 		<div class="container-fluid">
 		<h1><i class="fas fa-list-alt"></i>  Livros</h1>
 		<!--<div>
@@ -25,6 +30,7 @@
 		<div>
 			<?php
 			require_once("model/Connection.php");
+>>>>>>> 25d2be5fa60e29372b1def647c8022266e25e75f
 
 					$connection = new Connection();
 					$conn = $connection->getConn();

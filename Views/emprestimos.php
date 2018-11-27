@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-		<title>Empréstimos</title>
-</head>
+
 <body>
-		<div class="container-fluid">
-		<h1>Empréstimos</h1>
+		<h1><i class="far fa-list-alt"></i> Empréstimos</h1>
+		<div style="margin-top: 10px;" class="container-fluid">
+		
 		<?php
 		require_once("model/Connection.php");
 
@@ -43,3 +42,5 @@
 		</div>
 </body>
 </html>
+
+

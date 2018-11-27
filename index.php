@@ -23,6 +23,9 @@
         case 'CadastrarUsuario':
             $script = "cadastrarUsuario";
             break;
+        case 'Alugar':
+            $script = "retirarLivro";
+            break;
     }
 ?>
 
