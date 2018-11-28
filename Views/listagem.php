@@ -18,7 +18,8 @@
 					} 
 
 					$sql = "SELECT * FROM livro 
-							WHERE status_livro = 'D' OR status_livro = 'I'";
+							WHERE status_livro = 'D' OR status_livro = 'I'
+							ORDER BY nome_livro";
 					$result = $conn->query($sql);
 
 					if ($result->num_rows > 0) {
