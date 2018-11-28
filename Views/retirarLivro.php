@@ -19,9 +19,10 @@
 				} 
 
 
-					$sql = "SELECT nome_livro FROM livro
-							WHERE status_livro = 'D'";
-					$result = $conn->query($sql);
+					$query = "SELECT * FROM livro
+							  WHERE status_livro = 'D'
+							  ORDER BY nome_livro";
+					$result1 = mysqli_query($conn, $query);
 
 				?>
 
@@ -40,8 +41,8 @@
 						<div class="form-group col-xs-4 col-lg-4">
 							<label for="inputLivro"><i class="fas fa-braille"></i>  Livro</label>
 							<select class="form-control" id="selectTipo" name="selectTipo" aria-describedby="tipoHelp">
-								<?php while($row = mysql_fetch_array($result)):;?>
-								<option value="<?php echo $row[0];?>"><?php echo $row[1];?></option>
+								<?php while($row1 = mysqli_fetch_array($result1)):;?>
+								<option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
 							<?php endwhile;?>
 							</select>
 						</div>

@@ -1,4 +1,4 @@
-/*MAIN JS*/
+/*MAIN JS
 jQuery(document).ready(function($) {
     /*$scope.atualizarTabelaPrincipal = function () {
 		$http.get($scope.WebService).then(function (response) {
@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 				$('#tabela-principal').bootstrapTable({data: []});
 			}
 		});
-    }*/
+    }
     var urlGet = 'http://localhost/api_sistema-biblioteca/livro/read.php';
     $.get( 'http://localhost/api_sistema-biblioteca/livro/read.php', function(data) {
         $('#tabela-livros').bootstrapTable('destroy');
@@ -30,5 +30,5 @@ jQuery(document).ready(function($) {
             $('#tabela-livros').bootstrapTable('destroy');
 			$('#tabela-livros').bootstrapTable({data: data});
         }
-    });*/
-});
+    });
+});*/
