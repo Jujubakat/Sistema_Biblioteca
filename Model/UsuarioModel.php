@@ -16,6 +16,7 @@
         public function AdicionarUsuario($usuario)
         {
             $conn = new Connection();
+            $conn = $connection->getConn();
             
             //$stmt = $conn->prepare("INSERT INTO usuario('$user->Nome', '$user->Email', '$user->Senha', '$user->Apelido', '$user->dataNasc', '$user->Tipo')");            
 
