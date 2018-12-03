@@ -26,7 +26,7 @@
 
 				?>
 
-				<form id="formCadastroUsuario" class="form-cadastrar">
+				<form id="formCadastroAluga" class="form-cadastrar">
 					<div class="row">
 						<div class="form-group col-xs-6 col-lg-6">
 							<label for="inputEmail"><i class="fas fa-envelope"></i>  Email</label>

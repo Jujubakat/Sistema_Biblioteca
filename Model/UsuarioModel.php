@@ -2,6 +2,14 @@
 
 	require_once("Connection.php");
 
+    class Usuario
+    {
+        public $Nome;
+        public $Senha;
+        public $Email;
+        public $Cpf;
+        public $DataCadastro;            
+    }
     class UsuarioModel
     {    
 
@@ -11,7 +19,7 @@
             
             //$stmt = $conn->prepare("INSERT INTO usuario('$user->Nome', '$user->Email', '$user->Senha', '$user->Apelido', '$user->dataNasc', '$user->Tipo')");            
 
-            $sqlC = "INSERT INTO usuario('$usuario->Email', '$usuario->Senha', '$usuario->Nome', '$usuario->Cpf', '$usuario->dataCadas')";
+            $sqlC = "INSERT INTO usuario('$usuario->Email', '$usuario->Senha', '$usuario->Nome', '$usuario->Cpf', '$usuario->DataCadastro')";
 
 
             $stmt = $conn->prepare($sqlC);
