@@ -32,7 +32,7 @@ $( document ).ready(function() {
 
 		//Vamos mandar a requisição
 		request = $.ajax({
-			url: "controller/LivroController.php",
+			url: "Sistema_Biblioteca/Controller/LivroController.php",
 			type: "post",
 			data: serializedData
 		});

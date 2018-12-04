@@ -50,9 +50,9 @@
             
                 $book = new Livro();
                 $book->Nome = $_POST['inputNome'];
-                $book->Email = $_POST['inputEmail'];
-                $book->Senha = $_POST['inputSenha'];             
-                $user->Status = '';
+                $book->NomeA = $_POST['inputNomeA'];
+                $book->Categoria = $_POST['inputCat'];             
+                $book->Status = '';
                 
                 $form_data = $aplicacao->AdicionarLivro($book);
                 
