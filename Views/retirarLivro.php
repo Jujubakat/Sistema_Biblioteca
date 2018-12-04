@@ -29,16 +29,16 @@
 				<form id="formCadastroAluga" class="form-cadastrar">
 					<div class="row">
 						<div class="form-group col-xs-6 col-lg-6">
-							<label for="inputEmail"><i class="fas fa-envelope"></i>  Email</label>
-							<input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="emailHelp" placeholder="Informe o email">
-						</div>						
+							<label>Aluno:</label>
+							<label><?php $_SESSION['nome_usuario'] ?></label>
+						</div>
+						<div class="form-group col-xs-6 col-lg-6">
+							<label>Email:</label>
+							<label><?php $_SESSION['email_usuario'] ?></label>
+						</div>			
 					</div>
-					<div class="row">
-						<div class="form-group col-xs-4 col-lg-4">
-							<label for="inputSenha"><i class="fas fa-unlock"></i>  Senha</label>
-							<input type="password" class="form-control" id="inputSenha" name="inputSenha" placeholder="Informe sua senha">
-							</div>						
-						<div class="form-group col-xs-4 col-lg-4">
+					<div class="row">					
+						<div class="form-group col-xs-12 col-lg-12">
 							<label for="inputLivro"><i class="fas fa-braille"></i>  Livro</label>
 							<select class="form-control" id="selectTipo" name="selectTipo" aria-describedby="tipoHelp">
 								<?php while($row1 = mysqli_fetch_array($result1)):;?>
@@ -48,7 +48,7 @@
 						</div>
 					
 					<div class="btn-principal">
-						<button class="form-control btn-cadastrar-livro" type="submit"><i class="fas fa-plus-square"></i>  Cadastrar</button>
+						<button class="form-control btn-cadastrar-livro" type="submit"><i class="fas fa-plus-square"></i>  Alugar</button>
 					</div>
 				</form>
 			</div>

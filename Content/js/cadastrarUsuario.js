@@ -32,7 +32,7 @@ $( document ).ready(function() {
 
 		//Vamos mandar a requisição
 		request = $.ajax({
-			url: "controller/UsuarioController.php",
+			url: "/Sistema_biblioteca/Controller/UsuarioController.php",
 			type: "post",
 			data: serializedData
 		});
@@ -62,7 +62,7 @@ $( document ).ready(function() {
 			else {
 					$('#divMensagem').append('<div class="alert alert-success" role="alert">' + response.posted + '</div>')
 					.fadeIn(1000).html();
-					redirect("index.php?page=Emprestimos");
+					redirect("index.php?page=Login");
 			}
 		});
 

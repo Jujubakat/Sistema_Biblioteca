@@ -1,5 +1,6 @@
 <?php
 
+
 	require_once("Connection.php");
 
     class Usuario
@@ -15,11 +16,15 @@
 
         public function AdicionarUsuario($usuario)
         {
-            $conn = new Connection();
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "sistema_biblioteca";
+            $conn = new mysqli($servername, $username, $password, $dbname);
             
             //$stmt = $conn->prepare("INSERT INTO usuario('$user->Nome', '$user->Email', '$user->Senha', '$user->Apelido', '$user->dataNasc', '$user->Tipo')");            
 
-            $sqlC = "INSERT INTO usuario('$usuario->Email', '$usuario->Senha', '$usuario->Nome', '$usuario->Cpf', '$usuario->DataCadastro')";
+            $sqlC = "INSERT INTO usuario(nome_usuario, email_usuario, senha_usuario, cpf_usuario, tipo_usuario, data_cadastro) values('$usuario->Nome', '$usuario->Email', MD5('$usuario->Senha'), '$usuario->Cpf', 'A','$usuario->DataCadastro')";
 
 
             $stmt = $conn->prepare($sqlC);
@@ -43,8 +48,8 @@
 
         public function VerificaLogin($email, $senha)
         {
-            $connection = new Connection();
-            $conn = $connection->getConn();
+            
+            $conn = new mysqli($servername, $username, $password, $dbname);
 
             $sql = "SELECT nome_usuario, senha_usuario, email_usuario, tipo_usuario FROM usuario where email_usuario = ? and senha_usuario = ?";
             $stmt = $conn->prepare($sql);

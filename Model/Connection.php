@@ -1,5 +1,10 @@
 <?php
 
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "sistema_biblioteca";
+
     class Connection
     {
         public function getConn()

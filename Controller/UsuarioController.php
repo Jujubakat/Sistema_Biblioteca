@@ -53,8 +53,8 @@
                 $user->Email = $_POST['inputEmail'];
                 $user->Senha = $_POST['inputSenha'];
                 $user->Cpf = $_POST['inputCpf'];                
-                $user->DataCadastro = date_timezone_get();
-                $user->Tipo = '';
+                $user->DataCadastro = date("Y-m-d H:i:s");
+                $user->Tipo = 'A';
                 
                 $form_data = $aplicacao->AdicionarUsuario($user);
                 
