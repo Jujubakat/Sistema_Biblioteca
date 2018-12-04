@@ -8,10 +8,11 @@
         public function AdicionarLivro($livro)
         {
             $conn = new Connection();
+            $conn = $connection->getConn();
             
             //$stmt = $conn->prepare("INSERT INTO usuario('$user->Nome', '$user->Email', '$user->Senha', '$user->Apelido', '$user->dataNasc', '$user->Tipo')");            
 
-            $sqlC = "INSERT INTO livro('$livro->NomeL', '$livro->NomeA', '$livro->Cat')";
+            $sqlC = "INSERT INTO livro VALUES('$Livro->NomeL', '$Livro->NomeA', '$Livro->Cat')";
 
 
             $stmt = $conn->prepare($sqlC);
@@ -24,7 +25,7 @@
                 
             } else {
                 $form_data['success'] = true;
-                $form_data['posted'] = 'Usuario cadastrado com sucesso!';
+                $form_data['posted'] = 'Livro cadastrado com sucesso!';
             }
 
             $conn->close();	

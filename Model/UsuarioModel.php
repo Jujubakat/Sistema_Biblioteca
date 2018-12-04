@@ -21,6 +21,7 @@
             $password = "";
             $dbname = "sistema_biblioteca";
             $conn = new mysqli($servername, $username, $password, $dbname);
+
             
             //$stmt = $conn->prepare("INSERT INTO usuario('$user->Nome', '$user->Email', '$user->Senha', '$user->Apelido', '$user->dataNasc', '$user->Tipo')");            
 

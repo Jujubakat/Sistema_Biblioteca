@@ -1,16 +1,13 @@
 <?php 
     if(!isset($_GET['page'])){
-    $page = "Jogo";
+    $page = "Login";
     } else {
     $page = $_GET['page'];
     }
     switch($page)
     {
         
-        case 'Login':
-        default:
-            $script = "login";
-            break;  
+         
         case 'CadastrarLivro':
             $script = "cadastrarLivro";    
             break;
@@ -26,6 +23,10 @@
         case 'Alugar':
             $script = "retirarLivro";
             break;
+        case 'Login':
+        default:
+            $script = "login";
+            break; 
     }
 ?>
 
