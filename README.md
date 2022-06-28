@@ -4,7 +4,7 @@ Criação de sistema para biblioteca
 
 Feito e editado por:
 
-- Álex
+- Juliana
 - Matheus
 - Leonardo
 
